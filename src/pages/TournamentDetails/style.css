@@ -1,0 +1,44 @@
+.tournament-details {
+    min-width: 500px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.tournament-details h2 {
+    margin-bottom: 20px;
+}
+
+.tournament-details p {
+    margin: 10px 0;
+}
+
+.tournament-details .btn-primary {
+    margin-top: 20px;
+}
+
+.tournament-details .form-group {
+    margin-top: 20px;
+}
+
+.tournament-details .text-danger {
+    margin-top: 10px;
+}
+
+.tournament-details::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .tournament-details::-webkit-scrollbar-track {
+    background: #343a40;
+    border-radius: 10px;
+  }
+  
+  .tournament-details::-webkit-scrollbar-thumb {
+    background: #495057;
+    border-radius: 10px;
+  }
+  
+  .tournament-details::-webkit-scrollbar-thumb:hover {
+    background: #6c757d;
+  }

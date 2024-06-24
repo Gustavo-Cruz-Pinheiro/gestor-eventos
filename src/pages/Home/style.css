@@ -1,0 +1,12 @@
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da viewport */
+    margin-top: 50px; /* Ajuste se necessário para evitar sobreposição com o título */
+}
+
+.banner-image {
+    max-width: 100%;
+    height: auto;
+}

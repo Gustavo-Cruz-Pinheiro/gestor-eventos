@@ -1,0 +1,57 @@
+.tournament {
+    color: #ffffff;
+}
+
+.list-tournaments {
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+.list-tournaments .list-group-item {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    /* Adiciona apenas a borda inferior */
+    background-color: #343a40;
+    /* Define a cor de fundo inicial */
+    transition: background-color 0.3s ease;
+    /* Anima a mudança de cor do fundo */
+}
+
+.list-tournaments .list-group-item:hover {
+    background-color: #495057 !important; /* Cor de fundo ao passar o mouse com alta especificidade */
+  }
+
+/* Opcional: Remove a borda do último item */
+.list-tournaments .list-group-item:last-child {
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid #444444;
+    color: #ffffff !important;
+    background-color: transparent !important;
+}
+
+.nav-tabs,
+.nav-link-custom {
+    color: #fff;
+}
+
+.list-tournaments::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.list-tournaments::-webkit-scrollbar-track {
+  background: #343a40;
+  border-radius: 10px;
+}
+
+.list-tournaments::-webkit-scrollbar-thumb {
+  background: #495057;
+  border-radius: 10px;
+}
+
+.list-tournaments::-webkit-scrollbar-thumb:hover {
+  background: #6c757d;
+}

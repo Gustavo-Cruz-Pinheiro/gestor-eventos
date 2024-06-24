@@ -1,0 +1,10 @@
+.tournament-form {
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: -40px; /* Ajuste conforme necessário */
+  left: -50px; /* Ajuste conforme necessário */
+  z-index: 10; /* Para garantir que o botão fique sobre o conteúdo */
+}

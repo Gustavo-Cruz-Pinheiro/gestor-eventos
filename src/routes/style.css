@@ -1,0 +1,19 @@
+.loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #203936;
+    min-height: 50vh;
+}
+
+.text-loading {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .text-loading {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,38 @@
+.error {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-notfound {
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    width: 40%;
+    background-color: #007732;
+    border: 0;
+    border-radius: 2rem;
+    color: #F6ECE2;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.button-notfound:hover {
+    background-color: #02bd50;
+}
+
+.link-notfound {
+    text-decoration: none;
+    font-weight: bold;
+    color: #F6ECE2;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 600px){
+    .button-notfound {
+        width: 50%;
+    }
+}
+
