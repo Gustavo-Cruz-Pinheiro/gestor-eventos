@@ -3,8 +3,8 @@ import { Form, Button, Toast, ToastContainer } from 'react-bootstrap';
 import { db } from '../../services/firebaseConnection';
 import { addDoc, collection } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
-import { BsArrowLeft } from 'react-icons/bs'; // Importando o ícone de seta para esquerda
-import './style.css'; // Estilos customizados para ajustar a posição do botão
+import { BsArrowLeft } from 'react-icons/bs';
+import './style.css';
 
 interface TournamentFormProps {
   onSubmit: (formData: TournamentFormData) => void;
@@ -14,7 +14,7 @@ interface TournamentFormData {
   name: string;
   description: string;
   game: string;
-  status: string; // Adicionando o campo status ao tipo de dados do formulário
+  status: string;
 }
 
 export const TournamentForm: React.FC<TournamentFormProps> = ({ onSubmit }) => {

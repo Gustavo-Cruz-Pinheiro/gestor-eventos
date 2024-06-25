@@ -2,7 +2,6 @@ import logo from '../../assets/logo.png';
 import { Link } from "react-router-dom";
 
 export const Header = () => {
-    // Verifica se o tema claro está ativado no localStorage
     const lightTheme = localStorage.getItem('lightTheme') === 'true';
 
     return (

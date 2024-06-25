@@ -8,7 +8,6 @@ import { TournamentDetails } from "./pages/TournamentDetails";
 import { Private } from "./routes/private";
 import { Login } from "./pages/Login";
 import { Settings } from "./pages/Settings";
-// import { Home } from "./pages/Home";
 
 const router = createBrowserRouter([
     {
@@ -42,22 +41,6 @@ const router = createBrowserRouter([
                 path: '/torneios/:id',
                 element: <Private><TournamentDetails /></Private>
             },
-            // {
-            //     path: '/produto/:id',
-            //     element: <Private> <Produto /> </Private>
-            // },
-            // {
-            //     path: '/favoritos',
-            //     element: <Private> <Favoritos /> </Private>,
-            // },
-            // {
-            //     path: '/perfil',
-            //     element: <Private> <Perfil /> </Private>,
-            // },
-            // {
-            //     path: '/carrinho',
-            //     element: <Private> <Cart /> </Private>,
-            // },
             {
                 path: '*',
                 element: <NotFound />

@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import { Title } from '../../components/Title';
 import { db } from '../../services/firebaseConnection';
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
-import { BsSearch } from 'react-icons/bs'; // Importe o ícone de busca do react-icons
+import { BsSearch } from 'react-icons/bs';
 import './style.css';
 
 interface Tournament {
   id: string;
   name: string;
   game: string;
-  status: 'pending' | 'sort' | 'in-progress' | 'completed'; // Adicionei o status 'sort'
+  status: 'pending' | 'sort' | 'in-progress' | 'completed';
 }
 
 export function TournamentList() {
@@ -31,7 +31,7 @@ export function TournamentList() {
           id: doc.id,
           name: doc.data().name,
           game: doc.data().game,
-          status: doc.data().status as 'pending' | 'sort' | 'in-progress' | 'completed', // Converte para tipo correto
+          status: doc.data().status as 'pending' | 'sort' | 'in-progress' | 'completed',
         });
       });
       setTournaments(tournamentsList);
@@ -44,7 +44,7 @@ export function TournamentList() {
   const statusLabels: Record<string, string> = {
     all: 'Todos',
     pending: 'Pendente',
-    sort: 'Sorteio', // Label para o novo status 'sort'
+    sort: 'Sorteio',
     'in-progress': 'Em Progresso',
     completed: 'Completo',
   };

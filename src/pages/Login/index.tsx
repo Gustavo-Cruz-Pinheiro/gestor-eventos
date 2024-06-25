@@ -18,7 +18,7 @@ export const Login = () => {
 
         try {
             await signInWithEmailAndPassword(auth, email, password);
-            navigate('/'); // Redireciona para a página inicial após o login
+            navigate('/');
         } catch (error) {
             setError('Usuário ou senha incorretos.');
             console.error('Erro ao fazer login:', error);

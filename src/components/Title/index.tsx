@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { Button } from 'react-bootstrap';
-import { UserContext } from '../../contexts/UserContext'; // Importe o contexto de usuário
-import { AiOutlinePoweroff } from 'react-icons/ai'; // Importe o ícone de power
-import { useNavigate } from 'react-router-dom'; // Importe o hook useNavigate
+import { UserContext } from '../../contexts/UserContext';
+import { AiOutlinePoweroff } from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 import './style.css';
 
 interface SubHeaderProps {
@@ -10,15 +10,15 @@ interface SubHeaderProps {
 }
 
 export const Title: React.FC<SubHeaderProps> = ({ subPageName }) => {
-    const { email, deslogar } = useContext(UserContext); // Acesse os estados e funções do contexto de usuário
-    const navigate = useNavigate(); // Inicialize o hook useNavigate
+    const { email, deslogar } = useContext(UserContext);
+    const navigate = useNavigate();
 
     const userEmail = localStorage.getItem('@userData') ? JSON.parse(localStorage.getItem('@userData')!).email : '';
-    const lightTheme = localStorage.getItem('lightTheme') === 'true'; // Verifica se o tema claro está ativado
+    const lightTheme = localStorage.getItem('lightTheme') === 'true';
 
     const handleLogout = () => {
-        deslogar(); // Chama o método deslogar do contexto de usuário
-        navigate('/home'); // Navega para a rota /home após o logout
+        deslogar();
+        navigate('/home');
     };
 
     return (

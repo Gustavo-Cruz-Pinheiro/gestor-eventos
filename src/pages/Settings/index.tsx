@@ -4,13 +4,11 @@ import { Form } from 'react-bootstrap';
 export const Settings = () => {
     const [lightTheme, setLightTheme] = useState(false);
 
-    // Efeito para verificar e atualizar o tema com base no localStorage
     useEffect(() => {
         const storedTheme = localStorage.getItem('lightTheme') === 'true';
         setLightTheme(storedTheme);
     }, []);
 
-    // Função para lidar com a mudança no toggle
     const handleThemeToggle = () => {
         const newTheme = !lightTheme;
         setLightTheme(newTheme);

@@ -11,7 +11,7 @@ interface UserContextData {
     email: string;
     atualizarUsuario: (novoNome: string) => Promise<void>;
     logar: (novoNome: string, novoEmail: string) => void;
-    deslogar: () => void; // Adicionando método deslogar ao contexto
+    deslogar: () => void;
 }
 
 export const UserContext = createContext<UserContextData>({} as UserContextData);
@@ -42,7 +42,7 @@ export function UserProvider({ children }: UserProviderProps) {
     function deslogar() {
         setNome('');
         setEmail('');
-        localStorage.removeItem('@userData'); // Limpa os dados do localStorage ao deslogar
+        localStorage.removeItem('@userData');
         alert('Usuário deslogado com sucesso!');
     }
 
@@ -51,7 +51,7 @@ export function UserProvider({ children }: UserProviderProps) {
         email,
         atualizarUsuario,
         logar,
-        deslogar // Inclui o método deslogar no contexto
+        deslogar
     };
 
     return (
