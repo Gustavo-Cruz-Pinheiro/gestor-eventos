@@ -28,7 +28,6 @@ export const TournamentDetails: React.FC = () => {
     const [toastMessage, setToastMessage] = useState('');
     const [toastVariant, setToastVariant] = useState<'success' | 'danger'>('success');
     const [showDeleteModal, setShowDeleteModal] = useState(false);
-    const [showChampionModal, setShowChampionModal] = useState(false);
     const [championName, setChampionName] = useState('');
 
     useEffect(() => {
@@ -117,7 +116,6 @@ export const TournamentDetails: React.FC = () => {
                 champion: championName,
                 status: 'completed',
             }));
-            setShowChampionModal(false);
             setShowToast(true);
             setToastMessage('Campeão indicado com sucesso!');
             setToastVariant('success');
@@ -135,6 +133,9 @@ export const TournamentDetails: React.FC = () => {
         try {
             const docRef = doc(db, 'tournaments', id);
             await deleteDoc(docRef);
+            setShowToast(true);
+            setToastMessage('Torneio excluído com sucesso.');
+            setToastVariant('success');
             setShowDeleteModal(false);
             navigate('/torneios');
         } catch (error) {
@@ -225,11 +226,15 @@ export const TournamentDetails: React.FC = () => {
                                 <Form.Group controlId="championName">
                                     <Form.Label>Indicar Campeão</Form.Label>
                                     <Form.Control
-                                        type="text"
-                                        placeholder="Nome do Campeão"
+                                        as="select"
                                         value={championName}
                                         onChange={(e) => setChampionName(e.target.value)}
-                                    />
+                                    >
+                                        <option value="">Selecione o Campeão</option>
+                                        {tournament.teams?.map((team, index) => (
+                                            <option key={index} value={team}>{team}</option>
+                                        ))}
+                                    </Form.Control>
                                 </Form.Group>
                                 <Button variant="primary" onClick={handleSetChampion}>Indicar Campeão</Button>
                             </Form>
@@ -256,7 +261,7 @@ export const TournamentDetails: React.FC = () => {
             <div className="text-center mt-4">
                 <Button variant="danger" onClick={() => setShowDeleteModal(true)}>Excluir Torneio</Button>
             </div>
-            <Modal show={showDeleteModal} onHide={() => setShowDeleteModal(false)}>
+            <Modal show={showDeleteModal} className='dark' onHide={() => setShowDeleteModal(false)}>
                 <Modal.Header closeButton>
                     <Modal.Title>Confirmar Exclusão</Modal.Title>
                 </Modal.Header>

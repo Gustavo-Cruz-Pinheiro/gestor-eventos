@@ -7,6 +7,7 @@ import { NewTournament } from "./pages/NewTournament";
 import { TournamentDetails } from "./pages/TournamentDetails";
 import { Private } from "./routes/private";
 import { Login } from "./pages/Login";
+import { Settings } from "./pages/Settings";
 // import { Home } from "./pages/Home";
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
             {
                 path: '/login',
                 element: <Login />,
+            },
+            {
+                path: '/configuracao',
+                element: <Settings />,
             },
             {
                 path: '/torneios',
