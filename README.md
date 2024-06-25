@@ -53,3 +53,8 @@ Certifique-se de ter o Node.js e o npm (Node Package Manager) instalados em seu 
 ## Próximos Passos
 
 Agora você tem o projeto React.js em execução em seu computador local. Sinta-se à vontade para explorar o código-fonte, fazer alterações e expandir o projeto conforme necessário.
+
+## Usuário para testes
+
+Login: teste@teste.com
+Senha: 123456
