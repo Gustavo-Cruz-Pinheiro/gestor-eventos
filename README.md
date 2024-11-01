@@ -5,7 +5,7 @@
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)-->
 
-![image](./src/assests/demo.png)
+![Demonstração da Aplicação](./src/assests/demo.png)
 
 O objetivo do projeto foi desenvolver uma aplicação web com a finalidade de gerenciar Eventos.
 
