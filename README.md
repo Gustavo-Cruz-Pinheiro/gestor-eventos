@@ -23,33 +23,17 @@ As seguintes ferramentas foram usadas na construção do projeto:
 * Firebase; e
 * VSCode.
 
-## 📋 Funcionalidades
-
-As seguintes funcionalidades estão presentes no projeto:
-
-* Adicionar Atividade;
-* Remover Atividade;
-* Alterar Atividade;
-* Listar Atividade;
-* Buscar Atividade por Título;
-* Listagem por Status; e
 * Listagem ordenadas por Título.
 
 ## 🚀 Como executar o projeto
 
-### Pré-requisitos
-
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: Git e Node.js (de preferência nas versões mais recentes). Além disso, é bom ter um editor para trabalhar com o código como VSCode.
-
-### 🧭 Rodando a aplicação
-
 ```bash
 
 # Clone este repositório
-$ git clone https://github.com/Gustavo-Cruz-Pinheiro/react-to-do
+$ git clone https://github.com/Gustavo-Cruz-Pinheiro/gestor-eventos
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd react-to-do
+$ cd gestor-eventos
 
 # Instale as dependências
 $ npm install
