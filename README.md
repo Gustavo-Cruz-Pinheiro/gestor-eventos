@@ -1,60 +1,73 @@
-# Guia para baixar e executar este projeto React.js
+# Gestor de Eventos
 
-Este guia fornece instruções passo a passo sobre como baixar e executar um projeto React.js em seu computador local.
+![Status](http://img.shields.io/static/v1?label=Status&message=Finalizado&color=GREEN&style=for-the-badge)
+<!--![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)-->
 
-## Pré-requisitos
+![image](./src/assests/demo.png)
 
-Certifique-se de ter o Node.js e o npm (Node Package Manager) instalados em seu computador. Você pode baixá-los e instalá-los a partir do site oficial do Node.js: [Node.js](https://nodejs.org/).
+O objetivo do projeto foi desenvolver uma aplicação web com a finalidade de gerenciar Eventos.
 
-## Passos
+## 🛠 Tecnologias
 
-1. **Clone o repositório:**
+As seguintes ferramentas foram usadas na construção do projeto:
 
-   Abra o terminal (ou o Git Bash no Windows) e execute o seguinte comando:
+* React;
+* Bootstrap;
+* Vite;
+* React Icons;
+* React-Router-Dom;
+* Jest;
+* TypeScript;
+* Firebase; e
+* VSCode.
 
-   ```bash
-   git clone https://github.com/Jemisson/skeleton-react.js.git
-   ```
+## 📋 Funcionalidades
 
-2. **Navegue até o diretório do projeto:**
+As seguintes funcionalidades estão presentes no projeto:
 
-   Use o comando `cd` para entrar no diretório do projeto que você acabou de clonar:
+* Adicionar Atividade;
+* Remover Atividade;
+* Alterar Atividade;
+* Listar Atividade;
+* Buscar Atividade por Título;
+* Listagem por Status; e
+* Listagem ordenadas por Título.
 
-   ```bash
-   cd skeleton-react
-   ```
+## 🚀 Como executar o projeto
 
-3. **Instale as dependências:**
+### Pré-requisitos
 
-   Execute o comando npm install para instalar todas as dependências necessárias listadas no arquivo `package.json`:
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: Git e Node.js (de preferência nas versões mais recentes). Além disso, é bom ter um editor para trabalhar com o código como VSCode.
 
-   ```bash
-   npm install
-   ```
+### 🧭 Rodando a aplicação
 
-4. **Execute o aplicativo:**
+```bash
 
-   Após a instalação das dependências, você pode iniciar a aplicação com o seguinte comando:
+# Clone este repositório
+$ git clone https://github.com/Gustavo-Cruz-Pinheiro/react-to-do
 
-   ```bash
-   npm run dev
-   ```
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd react-to-do
 
-5. **Visualize o aplicativo:**
+# Instale as dependências
+$ npm install
 
-   Após iniciar o aplicativo, abra o seu navegador da web e visite o seguinte endereço:
+# Execute a aplicação em modo de desenvolvimento
+$ npm run dev
 
-   ```
-   http://localhost:5173
-   ```
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
-   Isso abrirá a aplicação React.js em seu navegador.
+```
 
-## Próximos Passos
+## Autor
 
-Agora você tem o projeto React.js em execução em seu computador local. Sinta-se à vontade para explorar o código-fonte, fazer alterações e expandir o projeto conforme necessário.
+Gustavo Cruz Pinheiro
 
-## Usuário para testes
+### Me siga nas redes sociais
 
-Login: teste@teste.com
-Senha: 123456
+<a href="https://github.com/Gustavo-Cruz-Pinheiro">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>
+<a href="https://www.instagram.com/gusttavo.cruz_">![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)</a>
+<a href="https://www.facebook.com/gustavocruzpinheiro">![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)</a>
+<a href="https://www.linkedin.com/in/gustavo-cruz-pinheiro-61b852217/">![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)</a>
